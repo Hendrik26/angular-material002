@@ -55,10 +55,15 @@
 </div>
 
 <div>
-    <mat-button-toggle-group>
-        <mat-button-toggle #toggleBtn value="angular">Angular!</mat-button-toggle>
-        {{toggleBtn.checked}}
+    <mat-button-toggle #toggleBtn checked disabled>Toggle!</mat-button-toggle>
+    {{toggleBtn.checked}}
+</div>
+
+<div>
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+        <mat-button-toggle value="angular">Angular!</mat-button-toggle>
         <mat-button-toggle value="react">React!</mat-button-toggle>
         <mat-button-toggle value="vue">Vue!</mat-button-toggle>
     </mat-button-toggle-group>
+    {{toggleGroup.value}}
 </div>
