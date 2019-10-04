@@ -69,6 +69,15 @@
 </div>
 
 <div>
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="hydrogen ">Hydrogen !</mat-button-toggle>
+        <mat-button-toggle value="helium ">Helium !</mat-button-toggle>
+        <mat-button-toggle value="lithium">Lithium!</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup.value}}
+</div>
+
+<div>
     <mat-icon>grade</mat-icon>
 </div>
 
