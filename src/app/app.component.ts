@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-material002';
+  alarmClockPrimary = '<mat-icon color="primary">alarm_add</mat-icon>';
 }
