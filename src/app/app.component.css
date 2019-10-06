@@ -1,9 +1,17 @@
+.navbar {
+    justify-content: space-between
+}
+
 button {
     margin-right: 3rem;
 }
 
 div {
     margin: 3rem;
+}
+
+span {
+    padding-right: 1rem;
 }
 
 
