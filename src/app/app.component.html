@@ -140,8 +140,9 @@
 </div>
 
 <div>
-    <mat-progress-spinner value="40"></mat-progress-spinner>
-    <mat-spinner></mat-spinner>
+    <mat-progress-spinner value="40">PrSp</mat-progress-spinner>
+    <button matBadge="Lo" (click)="loadData()">Load Data!</button>
+    <mat-spinner *ngIf="showSpinner">Sp</mat-spinner>
     <br><br><br>
 </div>
 

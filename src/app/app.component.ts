@@ -9,4 +9,14 @@ export class AppComponent {
   title = 'angular-material002';
   alarmClockPrimary = '<mat-icon color="primary">alarm_add</mat-icon>';
   notifications = 'D';
+  showSpinner = false;
+
+  loadData() {
+    this.showSpinner = true;
+    setTimeout(
+        () => {
+          this.showSpinner = false;
+        }, 5000
+    )
+  }
 }
