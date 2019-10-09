@@ -158,9 +158,17 @@
 </div>
 
 <div>
+    <div>
+        <mat-button-toggle #toggleBtnSideNav checked>ToggleSideNav!</mat-button-toggle>
+        {{toggleBtnSideNav.checked}}
+    </div>
     <mat-sidenav-container>
-        <mat-sidenav opened>Sidenav</mat-sidenav>
-        <mat-sidenav-content>Main</mat-sidenav-content>
+        <mat-sidenav color="primary" [(opened)]="toggleBtnSideNav.checked">Sidenav</mat-sidenav>
+        <mat-sidenav-content>
+            <button color="accent" mat-raised-button>Accent</button>
+            <button style="color: blue" mat-button>Blue!</button>
+            Main
+        </mat-sidenav-content>
     </mat-sidenav-container>
 </div>
 
