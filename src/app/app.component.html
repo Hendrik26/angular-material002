@@ -4,7 +4,7 @@
         {{toggleBtnSideNav.checked}}
     </div>
     <mat-sidenav-container>
-        <mat-sidenav color="primary" mode="side" [(opened)]="toggleBtnSideNav.checked">
+        <mat-sidenav #sidenav color="primary" mode="side" [(opened)]="toggleBtnSideNav.checked">
             Sidenav<br>
             Sidenav<br>
             Sidenav<br>
@@ -16,8 +16,12 @@
             Sidenav<br>
         </mat-sidenav>
         <mat-sidenav-content>
-            <button color="accent" mat-raised-button>Accent</button>
-            <button style="background-color: blue; color: white"  mat-raised-button>Blue!</button>
+            <button color="accent" mat-raised-button (click)="sidenav.open()">
+                Accent! SideNavOpen
+            </button>
+            <button style="background-color: blue; color: white"  mat-raised-button (click)="sidenav.close()">
+                Blue! SideNavOpen!
+            </button>
             Main<br>
             TextlineBegin<br>
             TextlineBegin<br>
