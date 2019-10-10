@@ -210,6 +210,23 @@
                     <button mat-menu-item>MariaDB</button>
                 </mat-menu>
             </div>
+
+            <div>
+                <button class="center" mat-raised-button [matMenuTriggerData]="{name: 'Hydrogen'}"
+                        [matMenuTriggerFor]="lazyMenu">
+                    Hydrogen
+                </button>
+                <button class="center" mat-raised-button [matMenuTriggerData]="{name: 'Helium'}"
+                        [matMenuTriggerFor]="lazyMenu">
+                    Helium
+                </button>
+                <mat-menu #lazyMenu="matMenu">
+                    <ng-template matMenuContent let-name="name">
+                        <button mat-menu-item>Settings</button>
+                        <button mat-menu-item>Log-Out {{name}}</button>
+                    </ng-template>
+                </mat-menu>
+            </div>
             TextlineEnd<br>
             TextlineEnd<br>
             TextlineEnd<br>
