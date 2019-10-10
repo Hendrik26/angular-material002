@@ -190,11 +190,25 @@
             </div>
 
             <div>
-                <mat-menu #appMenu="matMenu">
-                    <button mat-menu-item>Frontend</button>
-                    <button mat-menu-item>Backend</button>
-                </mat-menu>
                 <button mat-flat-button [matMenuTriggerFor]="appMenu">MenuTriggerButton</button>
+                <mat-menu #appMenu="matMenu">
+                    <button mat-menu-item [matMenuTriggerFor]="subMenuFrontend">Frontend</button>
+                    <button mat-menu-item [matMenuTriggerFor]="subMenuMiddleware">Middleware</button>
+                    <button mat-menu-item [matMenuTriggerFor]="subMenuBackend">Backend</button>
+                </mat-menu>
+                <mat-menu #subMenuFrontend="matMenu">
+                    <button mat-menu-item>Angular</button>
+                    <button mat-menu-item>React</button>
+                    <button mat-menu-item>Vue</button>
+                </mat-menu>
+                <mat-menu #subMenuMiddleware="matMenu">
+                    <button mat-menu-item>PHP</button>
+                    <button mat-menu-item>Node.js</button>
+                </mat-menu>
+                <mat-menu #subMenuBackend="matMenu">
+                    <button mat-menu-item>MySQL</button>
+                    <button mat-menu-item>MariaDB</button>
+                </mat-menu>
             </div>
             TextlineEnd<br>
             TextlineEnd<br>
