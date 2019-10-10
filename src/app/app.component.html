@@ -188,6 +188,14 @@
                     </div>
                 </mat-toolbar>
             </div>
+
+            <div>
+                <mat-menu #appMenu="matMenu">
+                    <button mat-menu-item>Frontend</button>
+                    <button mat-menu-item>Backend</button>
+                </mat-menu>
+                <button mat-flat-button [matMenuTriggerFor]="appMenu">MenuTriggerButton</button>
+            </div>
             TextlineEnd<br>
             TextlineEnd<br>
             TextlineEnd<br>
