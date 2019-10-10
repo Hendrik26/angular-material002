@@ -212,18 +212,25 @@
             </div>
 
             <div>
-                <button class="center" mat-raised-button [matMenuTriggerData]="{name: 'Hydrogen'}"
+                <button class="center" mat-raised-button [matMenuTriggerData]="{name: 'Hydrogen',
+                hobby: 'Fusing in Stars.', german: 'Wasserstoff', atomicNumber: 1, inertGas: false}"
                         [matMenuTriggerFor]="lazyMenu">
                     Hydrogen
                 </button>
-                <button class="center" mat-raised-button [matMenuTriggerData]="{name: 'Helium'}"
+                <button class="center" mat-raised-button [matMenuTriggerData]="{name: 'Helium',
+                hobby: 'Nothing.', atomicNumber: 2, inertGas: true}"
                         [matMenuTriggerFor]="lazyMenu">
                     Helium
                 </button>
                 <mat-menu #lazyMenu="matMenu">
-                    <ng-template matMenuContent let-name="name">
+                    <ng-template matMenuContent let-name="name" let-hobby="hobby" let-german="german"
+                                 let-atomic="atomicNumber" let-inertGas="inertGas">
                         <button mat-menu-item>Settings</button>
                         <button mat-menu-item>Log-Out {{name}}</button>
+                        <button>Hobby is {{hobby}}</button>
+                        <button>German name is {{german}}</button>
+                        <button>Atomic number is {{atomic}}</button>
+                        <button>InertGas is {{inertGas}}</button>
                     </ng-template>
                 </mat-menu>
             </div>
