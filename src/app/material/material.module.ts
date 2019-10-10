@@ -5,20 +5,22 @@ import {MatButtonModule,
     MatProgressSpinnerModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatMenuModule
+    MatMenuModule,
+    MatListModule
 } from '@angular/material';
 import {MatBadgeModule} from '@angular/material/badge';
 
 
 const MaterialComponents = [
-      MatButtonModule,
-      MatButtonToggleModule,
-      MatIconModule,
-      MatBadgeModule,
-      MatProgressSpinnerModule,
-      MatToolbarModule,
-      MatSidenavModule,
-      MatMenuModule
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatIconModule,
+    MatBadgeModule,
+    MatProgressSpinnerModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatMenuModule,
+    MatListModule
 ];
 
 @NgModule({
