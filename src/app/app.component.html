@@ -4,7 +4,8 @@
         {{toggleBtnSideNav.checked}}
     </div>
     <mat-sidenav-container>
-        <mat-sidenav #sidenav color="primary" mode="side" [(opened)]="toggleBtnSideNav.checked">
+        <mat-sidenav #sidenav color="primary" mode="side" [(opened)]="toggleBtnSideNav.checked"
+            (opened)="log('\n\nSideNav Opened!\n\n')" (closed)="log('\n\nSideNav Closed!\n\n')">
             Sidenav<br>
             Sidenav<br>
             Sidenav<br>

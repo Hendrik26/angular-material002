@@ -17,6 +17,10 @@ export class AppComponent {
         () => {
           this.showSpinner = false;
         }, 5000
-    )
+    );
+  }
+
+  log(state) {
+    console.log(state);
   }
 }
